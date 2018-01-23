@@ -38,7 +38,7 @@ class DanbooruApi_Mixin(object):
                         be parsed for aliased tags, metatags or multiple tags,
                         and will instead be parsed as a single literal tag.
         """
-        return self._get('posts.json', params)
+        return self._get('post.json', params)
 
     def post_show(self, post_id):
         """Get a post.
