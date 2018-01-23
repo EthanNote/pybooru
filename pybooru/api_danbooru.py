@@ -40,13 +40,13 @@ class DanbooruApi_Mixin(object):
         """
         return self._get('post.json', params)
 
-    def post_show(self, post_id):
-        """Get a post.
-
-        Parameters:
-            post_id (int): Where post_id is the post id.
-        """
-        return self._get('posts/{0}.json'.format(post_id))
+#    def post_show(self, post_id):
+#        """Get a post.
+#
+#        Parameters:
+#            post_id (int): Where post_id is the post id.
+#        """
+#        return self._get('posts/{0}.json'.format(post_id))
 
     def post_update(self, post_id, tag_string=None, rating=None, source=None,
                     parent_id=None, has_embedded_notes=None,
